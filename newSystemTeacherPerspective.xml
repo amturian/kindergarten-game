@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TaskModel xmlns="http://giove.isti.cnr.it/ctt" xmlns:coop="http://giove.isti.cnr.it/cttcoop" NameTaskModelID="Present story to children">
+    <Task Identifier="Present story to children" Category="user" Iterative="false" Optional="false" PartOfCooperation="false" Frequency=" ">
+        <Name>name</Name>
+        <SubTask>
+            <Task Identifier="Decide to start the activity" Category="user" Iterative="false" Optional="false" PartOfCooperation="false" Frequency=" ">
+                <Name>name</Name>
+                <TemporalOperator name="SequentialEnabling"/>
+                <Parent name="Present story to children"/>
+                <SiblingRight name="Decide domain"/>
+            </Task>
+            <Task Identifier="Decide domain" Category="user" Iterative="false" Optional="false" PartOfCooperation="false" Frequency=" ">
+                <Name>name</Name>
+                <TemporalOperator name="SequentialEnabling"/>
+                <Parent name="Present story to children"/>
+                <SiblingLeft name="Decide to start the activity"/>
+                <SiblingRight name="Prepare children"/>
+            </Task>
+            <Task Identifier="Prepare children" Category="user" Iterative="false" Optional="false" PartOfCooperation="false" Frequency=" ">
+                <Name>name</Name>
+                <Parent name="Present story to children"/>
+                <SiblingLeft name="Decide domain"/>
+            </Task>
+        </SubTask>
+    </Task>
+</TaskModel>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<meta charset="UTF-8">
+	<title>Joc de vocabular</title>
+	<link rel="icon" href="../images/ico.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="./new-words-game.css">
+	<script src="./new-words-game.js"></script>
+</head>
+<body>
+
+	<div id="questions-container">
+		<img src="../images/sound-icon.png" alt="buton ascultă întrebarea" id="sound_icon" />
+		<p class="question" id="question-p"></p>
+		
+	</div>
+	<div id="player"><img src="..\images\smiley.png" alt="faţă zâmbitoare"/></div>
+	
+	<div class="animals-container" id="animals-container">	
+		<div id="crocodile" class="animal"><img src="..\images\crocodile.png" alt="crocodil"></div>
+		<div id="wolf" class="animal"><img src="..\images\wolf.png" alt="lup"></div>
+		<div id="snake" class="animal"><img src="..\images\snake.png" alt="şarpe"></div>
+		<div id="tiger" class="animal"><img src="..\images\tiger.png" alt="tigru"></div>
+		<div id="polar" class="animal"><img src="..\images\polar.png" alt="urs polar"></div>
+		<div id="kangoroo" class="animal"><img src="..\images\kangoroo.png" alt="cangur"></div>
+	</div>
+
+	<div id="buttons-container">
+		<div class="nextButton" id="nextButton"><img id="next-icon" src="..\images\arrow-right.ico" alt="buton mergi mai departe"/></div>
+		<div class="homeButton" id="homeButton"><img id="home-icon" src="..\images\home.png" alt="buton mergi inapoi la meniu" onclick="goHome()"/></div>
+	</div>	
+</body>
+</html>

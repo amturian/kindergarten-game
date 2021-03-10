@@ -1,0 +1,169 @@
+body{
+	background:
+		linear-gradient(
+		rgba(255,242,229, 0.8),
+		rgba(255,242,229, 0.8)
+	),
+	url('../images/home.jpg');
+	height: 100%;
+	background-size: auto;
+}
+
+#player {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 50px;
+	height: 50px;
+}
+
+#player img{
+	width: 50px;
+	height: 50px;
+}
+
+#id {
+	position: relative;
+}
+
+img {
+	width: 100px;
+	height: 150px;
+}
+
+.animal {
+	position: absolute;
+	top: 75px;
+	width: 100px;
+	height: 150px;
+}
+
+#wolf{left: 85%; top: 25%;}
+#snake{left: 30%; top: 25%;}
+#tiger{left: 50%; top: 50%;}
+#crocodile{left: 70%; top:70%;}
+#polar{left: 20%; top:75%;}
+#kangoroo{left: 5%; top:40%;}
+
+#elephant1{left: 85%; top: 25%;}
+#elephant2{left: 30%; top: 25%;}
+#elephant3{left: 50%; top: 50%;}
+#grumpy1{left: 70%; top:70%;}
+#grumpy2{left: 20%; top:75%;}
+#grumpy3{left: 5%; top:40%;}
+#elephant1 img, #elephant2 img, #elephant3 img { width:100px;}
+#grumpy1 img, #grumpy2 img, #grumpy3 img { width:120px;}
+
+#elephant{left: 85%; top: 25%;}
+#dromader{left: 30%; top: 25%;}
+#ostrich{left: 50%; top: 50%;}
+#flowers{left: 70%; top:70%;}
+#tree{left: 20%; top:75%;}
+#flower{left: 10%; top:30%;}
+#dromader img { width:120px;}
+#elephant img {width:120px;}
+#ostrich img {width:100px;}
+#flower img {width:120px;}
+
+#granny{left: 85%; top: 25%;}
+#backpack2{left: 30%; top: 25%;}
+#backpack2 img {width:140px;}
+#backpack1{left: 50%; top: 50%;}
+#kid{left: 70%; top:70%;}
+#backpack3{left: 20%; top:75%;}
+#kid1{left: 10%; top:40%;}
+
+#morning1{left: 10%; top: 30%;}
+#night2{left: 10%; top: 75%;}
+#morning3{left: 40%; top: 75%;}
+#night1{left: 40%; top: 30%;}
+#night3{left: 70%; top:75%;}
+#morning2{left: 70%; top:30%;}
+#morning1 img, #morning2 img, #morning3 img, #night1 img, #night2 img, #night3 img {width: 200px;}
+
+#dog{left: 75%; top: 75%;}
+#sheep{left: 30%; top: 25%;}
+#sheep img { width: 120px; height:100px;}
+#fox{left: 5%; top: 30%;}
+
+.question{
+	color: #ffffff;
+	font-weight: 900;
+	font-size: 10vh;
+	text-shadow: 0px 0px 15px #005f0d;
+	text-align: center;
+}
+
+#questions-container {
+	text-align: center;
+}
+
+#questions-container img {
+	width: 60px;
+	height: 40px;
+	/* float: left; */
+	/* display: inline; */
+}
+
+#questions-container p{
+	margin-top: -5px;
+}
+
+#home-icon {    
+	width: 200px;
+    height: 200px;
+	cursor: pointer;
+	margin-top: -10%;
+}
+
+.homeButton{
+	visibility: hidden;
+}
+
+.nextButton {
+	visibility: hidden;
+    font-size: 50px;
+    display: block;
+    width: 150px;
+    height: 150px;
+    font-size: 1.3em;
+    font-weight: light;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100px;
+    letter-spacing: -1px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    background: #4ABC96;
+    cursor: pointer;
+	box-shadow: 0 0 0 0 rgba(#82ceb5, .5);
+    -webkit-animation: pulse 1.5s infinite;
+	position: relative;
+}
+.nextButton:hover {
+    -webkit-animation: none;
+}
+
+#next-icon {    
+	width: 150px;
+    height: 150px;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+    @include transform(scale(.9));
+    }
+    70% {
+    @include transform(scale(1));
+        box-shadow: 0 0 0 20px #82ceb5;
+    }
+    100% {
+    @include transform(scale(.9));
+        box-shadow: 0 0 0 0 #82ceb5;
+    }
+}
+#buttons-container {
+    text-align: -webkit-center;
+}

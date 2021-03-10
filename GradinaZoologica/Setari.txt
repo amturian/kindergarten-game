@@ -1,0 +1,3 @@
+ - Accesati din browserul Chrome linkul: 'chrome://flags/#autoplay-policy'
+ - Setati proprietatea 'Autoplay policy' la optiunea 'No user gesture is required'
+ - Restartati browserul

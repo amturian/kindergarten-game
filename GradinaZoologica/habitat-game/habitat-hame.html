@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ro">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>La grădina zoologică</title>
+    <link rel="icon" href="../images/ico.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="./habitat-game.css">
+    <script src="./habitat-game.js"></script>
+    <script src="../js/Sortable.min.js"></script>
+</head>
+
+<body>
+	<div id="australia" class="container lists">
+		<figure class="habitat">
+			<figcaption>
+				<p>AUSTRALIA</p>
+				<img alt="Sunet: Australia" src="../images/sound-icon.png" onclick="playAudio('australia')"/>
+			</figcaption>
+			<ul id="australia_list">
+				<li><img alt="Zona de drop pentru Australia" src="../images/australia.jpg"/></li>
+			</ul>
+		</figure>
+	 </div>
+	 
+	 <div id="bengal" class="container lists">
+		<figure class="habitat">
+			<figcaption>
+				<p>BENGAL</p>
+				<img alt="Sunet: Bengal" src="../images/sound-icon.png" onclick="playAudio('bengal')"/>
+			</figcaption>
+			<ul id="bengal_list">
+			<li><img alt="Zona de drop pentru Bengal" src="../images/bengal.jpg"/></li>
+			</ul>
+		</figure>
+	 </div>
+	 
+	 <div id="sahara" class="container lists">
+		<figure class="habitat">
+			<figcaption>
+				<p>SAHARA</p>
+				<img alt="Sunet: Sahara" src="../images/sound-icon.png" onclick="playAudio('sahara')"/>
+			</figcaption>
+			<ul id="sahara_list">
+			<li><img alt="Zona de drop pentru Sahara" src="../images/sahara.jpg"/></li>
+			</ul>
+		</figure>
+	 </div>
+	 
+	 <div id="padurea_ecuatoriala" class="container lists">
+		<figure class="habitat">
+			<figcaption>
+				<p>PADUREA ECUATORIALA</p>
+				<img alt="Sunet: Padurea Ecuatoriala" src="../images/sound-icon.png" onclick="playAudio('padurea_ecuatoriala')"/>
+			</figcaption>
+			<ul id="padurea_ecuatoriala_list">
+			<li><img alt="Zona de drop pentru Padurea Ecuatoriala" src="../images/padurea_ecuatoriala.jpg"/></li>
+			</ul>
+		</figure>
+	 </div>
+	 
+	 <div id="nil" class="container lists">
+		<figure class="habitat">
+			<figcaption>
+				<p>NIL</p>
+				<img alt="Sunet: Nil" src="../images/sound-icon.png" onclick="playAudio('nil')"/>
+			</figcaption>
+			<ul id="nil_list">
+			<li><img alt="Zona de drop pentru Nil" src="../images/nil.jpg"/></li>
+			</ul>
+		</figure>
+	 </div>
+	 
+	 <div id="polul_nord" class="container lists">
+		<figure class="habitat">
+			<figcaption>
+				<p>POLUL NORD</p>
+				<img alt="Sunet: Polul Nord" src="../images/sound-icon.png" onclick="playAudio('polul_nord')"/>
+			</figcaption>
+			<ul id="polul_nord_list">
+			<li><img alt="Zona de drop pentru Polul Nord" src="../images/polul_nord.jpg"/></li>
+			</ul>
+		</figure>
+	 </div>
+
+	 <div id="animals">
+		<ul id="animals_list">
+			<li data-list="sahara_list" class="animal"><img alt="Strut" src="../images/ostrich.png"/></li>
+			<li data-list="australia_list" class="animal"><img alt="Cangur" src="../images/kangoroo.png"/></li>
+			<li data-list="bengal_list" class="animal"><img alt="Tigru" src="../images/tiger.png"/></li>
+			<li data-list="padurea_ecuatoriala_list" class="animal"><img alt="Elefant" src="../images/elephant.png"/></li>
+			<li data-list="polul_nord_list" class="animal"><img alt="Urs polar" src="../images/polar.png"/></li>
+			<li data-list="nil_list" class="animal"><img alt="Crocodil" src="../images/crocodile.png"/></li>
+			<li data-list="sahara_list" class="animal"><img alt="Camila" src="../images/camel.png"/></li>
+		</ul>
+	 </div>
+</body>
+
+</html>

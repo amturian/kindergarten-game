@@ -1,0 +1,87 @@
+<?xmp version="1.0" encoding="UTF-8" standalone="yes"?>
+<TaskModel xmlns="http://giove.isti.cnr.it/ctt" xmlns:coop="http://giove.isti.cnr.it/cttcoop" NameTaskModelID="Present story to children">
+    <Task Identifier="Present story to children" Category="abstraction" Iterative="false" Optional="false" PartOfCooperation="false" Frequency=" ">
+        <Name>name</Name>
+        <Type>None</Type>
+        <SubTask>
+            <Task Identifier="Decide to start activity" Category="user" Iterative="false" Optional="false" PartOfCooperation="false" Frequency=" ">
+                <Name>name</Name>
+                <TemporalOperator name="SequentialEnabling"/>
+                <Parent name="Present story to children"/>
+                <SiblingRight name="Decide domain"/>
+            </Task>
+            <Task Identifier="Decide domain" Category="user" Iterative="false" Optional="false" PartOfCooperation="false" Frequency=" ">
+                <Name>name</Name>
+                <TemporalOperator name="SequentialEnabling"/>
+                <Parent name="Present story to children"/>
+                <SiblingLeft name="Decide to start activity"/>
+                <SiblingRight name="Prepare children"/>
+            </Task>
+            <Task Identifier="Prepare children" Category="user" Iterative="false" Optional="false" PartOfCooperation="false" Frequency=" ">
+                <Name>name</Name>
+                <TemporalOperator name="SequentialEnabling"/>
+                <Parent name="Present story to children"/>
+                <SiblingLeft name="Decide domain"/>
+                <SiblingRight name="Interact with the application"/>
+                <SubTask>
+                    <Task Identifier="Announce the activity" Category="user" Iterative="false" Optional="false" PartOfCooperation="false" Frequency=" ">
+                        <Name>name</Name>
+                        <TemporalOperator name="SequentialEnabling"/>
+                        <Parent name="Prepare children"/>
+                        <SiblingRight name="Have all children at computers"/>
+                    </Task>
+                    <Task Identifier="Have all children at computers" Category="user" Iterative="false" Optional="false" PartOfCooperation="false" Frequency=" ">
+                        <Name>name</Name>
+                        <Parent name="Prepare children"/>
+                        <SiblingLeft name="Announce the activity"/>
+                    </Task>
+                </SubTask>
+            </Task>
+            <Task Identifier="Interact with the application" Category="interaction" Iterative="false" Optional="false" PartOfCooperation="false" Frequency=" ">
+                <Name>name</Name>
+                <Parent name="Present story to children"/>
+                <SiblingLeft name="Prepare children"/>
+                <SubTask>
+                    <Task Identifier="Start the application" Category="interaction" Iterative="false" Optional="false" PartOfCooperation="false" Frequency=" ">
+                        <Name>name</Name>
+                        <TemporalOperator name="SequentialEnabling"/>
+                        <Parent name="Interact with the application"/>
+                        <SiblingRight name="Use the application"/>
+                    </Task>
+                    <Task Identifier="Use the application" Category="interaction" Iterative="false" Optional="false" PartOfCooperation="false" Frequency=" ">
+                        <Name>name</Name>
+                        <Parent name="Interact with the application"/>
+                        <SiblingLeft name="Start the application"/>
+                        <SubTask>
+                            <Task Identifier="Learn mathematics" Category="interaction" Iterative="false" Optional="false" PartOfCooperation="false" Frequency=" ">
+<Name>name</Name>
+<TemporalOperator name="Parallel"/>
+<Parent name="Use the application"/>
+<SiblingRight name="Learn new words"/>
+                            </Task>
+                            <Task Identifier="Learn new words" Category="interaction" Iterative="false" Optional="false" PartOfCooperation="false" Frequency=" ">
+<Name>name</Name>
+<TemporalOperator name="Parallel"/>
+<Parent name="Use the application"/>
+<SiblingLeft name="Learn mathematics"/>
+<SiblingRight name="Learn word associations"/>
+                            </Task>
+                            <Task Identifier="Learn word associations" Category="interaction" Iterative="false" Optional="false" PartOfCooperation="false" Frequency=" ">
+<Name>name</Name>
+<TemporalOperator name="Parallel"/>
+<Parent name="Use the application"/>
+<SiblingLeft name="Learn new words"/>
+<SiblingRight name="Understand story"/>
+                            </Task>
+                            <Task Identifier="Understand story" Category="interaction" Iterative="false" Optional="false" PartOfCooperation="false" Frequency=" ">
+<Name>name</Name>
+<Parent name="Use the application"/>
+<SiblingLeft name="Learn word associations"/>
+                            </Task>
+                        </SubTask>
+                    </Task>
+                </SubTask>
+            </Task>
+        </SubTask>
+    </Task>
+</TaskModel>

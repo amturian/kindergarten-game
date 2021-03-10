@@ -1,0 +1,40 @@
+<?xmp version="1.0" encoding="UTF-8" standalone="yes"?>
+<TaskModel xmlns="http://giove.isti.cnr.it/ctt" xmlns:coop="http://giove.isti.cnr.it/cttcoop" NameTaskModelID="Read a story to children">
+    <Task Identifier="Read a story to children" Category="user" Iterative="false" Optional="false" PartOfCooperation="false" Frequency=" ">
+        <Name>name</Name>
+        <Type>None</Type>
+        <SubTask>
+            <Task Identifier="Decide to read" Category="user" Iterative="false" Optional="false" PartOfCooperation="false" Frequency=" ">
+                <Name>name</Name>
+                <TemporalOperator name="SequentialEnabling"/>
+                <Parent name="Read a story to children"/>
+                <SiblingRight name="Decide domain (nature, science, language)"/>
+            </Task>
+            <Task Identifier="Decide domain (nature, science, language)" Category="user" Iterative="false" Optional="false" PartOfCooperation="false" Frequency=" ">
+                <Name>name</Name>
+                <TemporalOperator name="SequentialEnabling"/>
+                <Parent name="Read a story to children"/>
+                <SiblingLeft name="Decide to read"/>
+                <SiblingRight name="Choose story"/>
+            </Task>
+            <Task Identifier="Choose story" Category="user" Iterative="false" Optional="false" PartOfCooperation="false" Frequency=" ">
+                <Name>name</Name>
+                <Parent name="Read a story to children"/>
+                <SiblingLeft name="Decide domain (nature, science, language)"/>
+                <SubTask>
+                    <Task Identifier="Grab book" Category="user" Iterative="false" Optional="false" PartOfCooperation="false" Frequency=" ">
+                        <Name>name</Name>
+                        <TemporalOperator name="Interleaving"/>
+                        <Parent name="Choose story"/>
+                        <SiblingRight name="Announce children to prepare"/>
+                    </Task>
+                    <Task Identifier="Announce children to prepare" Category="user" Iterative="false" Optional="false" PartOfCooperation="false" Frequency=" ">
+                        <Name>name</Name>
+                        <Parent name="Choose story"/>
+                        <SiblingLeft name="Grab book"/>
+                    </Task>
+                </SubTask>
+            </Task>
+        </SubTask>
+    </Task>
+</TaskModel>
